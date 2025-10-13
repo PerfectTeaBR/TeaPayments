@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeaPayments - Produtos</title>
+  </head>
+  <body>
+    <div class="produtos-container">
+      <h1>Produtos</h1>
+      <select name="Produtos">
+        <option value="Selecione-1">Selecione Aqui!</option>
+        <option value="Sticker">Stickers</option>
+        <option value="WallPapers">WallPapers</option>
+        <option value="Logo">Logo</option>
+        <option value="Templates Canva">Templates Canva</option>
+        <option value="Comission">Comissão</option>
+      </select>
+      <button onclick="enviarSelecao"><a href="/carrinho">Pronto!</a></button>
+    </div>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      select,
+      a {
+        color: rgb(0, 145, 255);
+        text-decoration: none;
+        text-align: center;
+        border-radius: 12px;
+      }
+
+      .produtos-container {
+        background: whitesmoke;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 12px;
+        padding: 20px 30px;
+        width: 300px;
+      }
+    </style>
+    <script>
+      function enviarSelecao() {
+        const selecao = {
+          item1: document.getElementById("item1").checked,
+          item2: document.getElementById("item2").checked,
+          item3: document.getElementById("item3").checked,
+        };
+
+        fetch("/salvar", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(selecao),
+        })
+          .then((response) => response.text())
+          .then((data) => console.log(data))
+          .catch((error) => console.error("Erro:", error));
+      }
+    </script>
+  </body>
+</html>
