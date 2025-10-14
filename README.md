@@ -12,23 +12,6 @@
 - **Não permite alterações no código original**  
 
 ✅ Este projeto é **Open Source** para estudo e referência, mas não deve ser modificado para distribuição.
-
----
-
-## 🧩 Estrutura do Projeto
-
-```
-
-TeaPayments/
-│
-├── main.py               # Arquivo principal do Flask
-└── templates/           # Páginas HTML
- ├── index.html
- ├── produtos.html
- └── carrinho.html
-
-````
-
 ---
 
 ## 🚀 Funcionalidades
@@ -105,6 +88,7 @@ http://127.0.0.1:5000/
 
 Este projeto é licenciado sob a **GNU Affero General Public License v3.0 (AGPL-3.0)**(Esqueci de Colocar a Licença).
 Você pode usar e estudar o projeto, mas **não é permitido alterar ou redistribuir o código.
+
 
 
 
