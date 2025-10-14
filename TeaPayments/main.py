@@ -33,6 +33,15 @@ def compraerrada():
 def registro():
   return render_template ("registro.html")
 
+@app.route("/pagar")
+def pagar_page():
+  return render_template ("pagar.html")
+
+# Rota para Pagar com Cartão
+@app.route("/card-payment")
+def payment_with_card():
+  return render_template ("cartao.html")
 # Config. para as rotas funcionar, e com debugger
 if __name__ == "__main__":
+
   app.run(debug=True)
