@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagamento - TeaPayments</title>
+  </head>
+  <body>
+    <div class="container-pagar">
+      <h1>Pagamento do Produto</h1>
+      <h2>Selecione a Forma de Pagamento</h2>
+      <select name="Produtos">
+        <option value="Selecione-1">Selecione a Forma de Pagamento</option>
+        <option value="Crédito">Crédito</option>
+        <option value="Pix">Pix</option>
+        <option value="Débito">Débito</option>
+        <option value="PicPay">PicPay</option>
+        <option value="MercadoPago">Mercado Pago( Not API )</option>
+      </select>
+      <button><a href="/compracerta">Pagar</a></button>
+      <h4>Deseja pagar em cartão? <a href="/card-payment">Clique Aqui!</a></h4>
+    </div>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      .container-pagar {
+        background: white;
+        border: 2px solid rgb(0, 145, 255);
+        border-radius: 12px;
+        padding: 20px 30px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        align-items: center;
+        width: 300px;
+      }
+
+      a {
+        text-decoration: none;
+        color: rgb(0, 145, 255);
+      }
+    </style>
+  </body>
+</html>
