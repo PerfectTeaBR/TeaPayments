@@ -1,6 +1,6 @@
 
 # 🍵 TeaPayments
-
+https://jitpack.io/#PerfectTeaBR/TeaPayments
 ## ☕ Simulador Open Source de Compras Digitais em Flask  
 ### 🛒 Produtos, Carrinho e Navegação — Sem Pagamento Real <img src="💸.png" wdith="20" height="20"> , Sem API (por enquanto)
 
@@ -88,6 +88,7 @@ http://127.0.0.1:5000/
 
 Este projeto é licenciado sob a **GNU Affero General Public License v3.0 (AGPL-3.0)**(Esqueci de Colocar a Licença).
 Você pode usar e estudar o projeto, mas **não é permitido alterar ou redistribuir o código.
+
 
 
 
